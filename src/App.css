@@ -1,0 +1,16 @@
+#root {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.logo {
+  position:fixed;
+  left: 2rem;
+  width: 10%;
+  height: auto;
+}
+
+nav h4 {
+  
+}
