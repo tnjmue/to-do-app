@@ -1,16 +1,133 @@
-#root {
+* {
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  height: 100%;
   margin: 0;
   padding: 0;
+  font-family: 'Lucida Console';
+  
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 1rem 1rem;
   text-align: center;
+  min-height: 100vh;
+  background-color: rgb(45, 45, 45); 
+  color: antiquewhite;
+}
+
+.app-container {
+  flex: 1; /* makes it expand to fill #root height */
 }
 
 .logo {
-  position:fixed;
-  left: 2rem;
-  width: 10%;
+  width: 7vw;
   height: auto;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
 }
 
-nav h4 {
+.nav {
+  display: flex;
+  align-items: center;
+  background-color: rgb(98, 111, 167);
+  color: rgb(249, 147, 164);
+}
+
+.nav h4 {
+  cursor: pointer;
+}
+
+.nav a {
+  text-decoration: none;  
+  color: inherit;
+}  
+
+.list-parent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.list-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 700px;
+}
+
+.task-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* gap: 1rem; */
+  padding: 1rem;
+  width: 100%;
+  box-sizing: border-box;
+  text-align: left;
+}
+
+.task-card--status button {
+  background: none;
+  border: none;
+  color: inherit;
+  font: inherit;
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+}
+
+.task-card--name {
+  text-align: left;
+  width: 60%;
+  text-decoration: none; 
+  color: inherit !important; 
+}
+
+.task-card a {
+  text-decoration: none;
+  color: rgb(249, 147, 164);
+}
+
+
+.NotFound {
+  /* position: relative;     */       
+  background-size: contain;     
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;                 
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;  
+  align-items: center;         
+  text-align: center;
+}
+
+.NotFound h1 {
+  padding: 6rem;
+  margin: 0;
+  z-index: 1;                   /* ensures text is on top of background */
+  color: rgb(98, 111, 167);
+  font-size: 5rem;                 
+}
+
+
+
+footer {
+  text-align: center;
+  margin-top: auto;
+  background-color:rgb(98, 111, 167);
   
+}
+
+footer a {
+  text-decoration: none;
+  color: rgb(252, 231, 154)
 }

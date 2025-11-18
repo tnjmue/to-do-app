@@ -1,0 +1,9 @@
+[
+  {"id": "t1", "task": "Read the project brief", "completed": true},
+  {"id": "t2", "task": "Create a project repository", "completed": false},
+  {"id": "t3", "task": "Create React application using Vite", "completed": false},
+  {"id": "t4", "task": "Finish Day 1 Development Tasks", "completed": false},
+  {"id": "t5", "task": "Finish Day 1 Research Tasks", "completed": false},
+  {"id": "t6", "task": "Finish Day 2 Development Tasks", "completed": false},
+  {"id": "t7", "task": "Finish Day 2 Research Tasks", "completed": false}
+]
