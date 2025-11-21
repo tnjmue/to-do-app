@@ -50,7 +50,7 @@ html, body, #root {
 
 .about-app {
   text-align: center;
-  margin: 6rem auto 0 auto;
+  margin: 6rem auto 6rem auto;
   max-width: 50%;
 }
 
@@ -100,6 +100,10 @@ html, body, #root {
 .task-card a {
   text-decoration: none;
   color: rgb(249, 147, 164);
+}
+
+.task-card:hover {
+  background-color: rgb(54, 54, 54);
 }
 
 .list-container form {
@@ -174,5 +178,10 @@ footer {
 
 footer a {
   text-decoration: none;
-  color: rgb(252, 231, 154)
+ /*  color: rgb(252, 231, 154) */
+  color: antiquewhite;
+}
+
+footer a:hover {
+  color: rgb(249, 147, 164);
 }
