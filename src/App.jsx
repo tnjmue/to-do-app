@@ -17,15 +17,25 @@ function App() {
     setTasks(prev => prev.filter(task => task.id !== id));
     };
 
+  const handleAdd = (newTask) => {
+    setTasks([...tasks, newTask]);
+  };
+
+  const handleEdit = (id, newTaskText) => {
+  setTasks(tasks.map(task => 
+    task.id === id ? { ...task, task: newTaskText } : task
+    ));
+  };
+
   return (
     <>
       <div className="app-container">
         
           <Navbar />
            <Routes>
-            <Route path="/"  element={<Dashboard tasks={tasks} handleDelete={handleDelete} />} />
+            <Route path="/"  element={<Dashboard tasks={tasks} handleDelete={handleDelete} handleAdd={handleAdd} />} />
             <Route path="/about" element={<About />} />
-            <Route path="/tasks/:taskId" element={<TaskDetails tasks={tasks} />} />
+            <Route path="/tasks/:taskId" element={<TaskDetails tasks={tasks} handleEdit={handleEdit} />} />
             <Route path="*" element={<NotFound />} />
             
           </Routes>

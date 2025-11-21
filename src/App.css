@@ -35,7 +35,7 @@ html, body, #root {
 .nav {
   display: flex;
   align-items: center;
-  background-color: rgb(98, 111, 167);
+  background-color: rgb(100, 98, 167);
   color: rgb(249, 147, 164);
 }
 
@@ -47,6 +47,12 @@ html, body, #root {
   text-decoration: none;  
   color: inherit;
 }  
+
+.about-app {
+  text-align: center;
+  margin: 6rem auto 0 auto;
+  max-width: 50%;
+}
 
 .list-parent {
   display: flex;
@@ -67,11 +73,11 @@ html, body, #root {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  /* gap: 1rem; */
   padding: 1rem;
   width: 100%;
   box-sizing: border-box;
   text-align: left;
+  border-bottom: solid 2px;
 }
 
 .task-card--status button {
@@ -96,6 +102,45 @@ html, body, #root {
   color: rgb(249, 147, 164);
 }
 
+.list-container form {
+  background: transparent;
+  border: none;
+}
+
+.list-container form label {
+  background: transparent;
+  color: skyblue;
+  font-size:xx-large;
+  font-weight: bolder;
+  padding-right: 2rem;
+  cursor: pointer;
+}
+
+.list-container form input {
+  background: transparent;
+  border: none;
+  outline: none;
+  margin-left: 7rem;
+  color: antiquewhite;
+  font-family: 'Lucida Console';
+  font-size: 18px;
+ 
+}
+
+.edit-input {
+    font-size: 2em;
+    font-weight: bold;
+    border: none;
+    background: transparent;
+    color: inherit;
+    width: 100%;
+    outline: none;
+    text-align: center;
+    font-family: 'Lucida Console';
+    margin: 0.67em 0;
+    padding: 0;
+}
+
 
 .NotFound {
   /* position: relative;     */       
@@ -114,8 +159,8 @@ html, body, #root {
   padding: 6rem;
   margin: 0;
   z-index: 1;                   /* ensures text is on top of background */
-  color: rgb(98, 111, 167);
-  font-size: 5rem;                 
+  font-size: 5rem;  
+  color: rgb(254, 230, 144);               
 }
 
 
@@ -123,7 +168,7 @@ html, body, #root {
 footer {
   text-align: center;
   margin-top: auto;
-  background-color:rgb(98, 111, 167);
+  background-color:rgb(100, 98, 167);
   
 }
 
